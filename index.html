@@ -1,21 +1,145 @@
-<!DOCTYPE html>
-<html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><html lang="en"> <![endif]-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Responsive Project</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/stylesheet/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="/stylesheet/print.css" media="print" rel="stylesheet" type="text/css" />
+    </head>
 
-<head>
-    <title>Responsive Project</title>
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <body>
+    <header id="home" class="clearfix">
 
-    <link href="/stylesheet/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <link href="/stylesheet/print.css" media="print" rel="stylesheet" type="text/css" />
-    <!--[if IE]>
-      <link href="/stylesheet/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <![endif]-->
-</head>
+        <h1 class="name">Rashad J Madison</h1>
 
- <body>
- </body>
-</html>
+        <ul class="main-nav clearfix">
+            <li class="nav"><a href="#home">HOME</a></li>
+            <li class="nav"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="nav"><a href="#skills">SKILLS</a></li>
+            <li class="nav"><a href="#contact">CONTACT</a></li>
+        </ul>
+    <div class="img-box clearfix">
+        <img src="images/profileImg.svg" onerror="this.src='your.png'" id="avatar-pic" alt="Rashad Madisons profile image">
+    </div>
+    <div class="lead-container clearfix">
+    <p class="lead">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+    </div>
+    </header>
+
+
+    <div class="wrapper">
+
+    <h1 id="portfolio" class="center">PORTFOLIO</h1>
+
+    <div class="container">
+        <img src="images/portfolioONE.png" alt="picture of marketing page" class="pic">
+      <div class="desc">
+        <h2>Marketing Page</h2>
+        <p class="pic-text">This project shows the front page of a marketing website meant for a specific business i'm interested in.</p>
+      </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioTWO.png" alt="picture of search page" class="pic">
+      <div class="desc">
+        <h2>Search Page</h2>
+        <p class="pic-text">This project searches through a specific database to find information that the user is trying to look up.</p>
+      </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioTHREE.png" alt="travel app picture" class="pic">
+      <div class="desc">
+        <h2>Travel App</h2>
+        <p class="pic-text">This project compares travel times based on diffrent transportation methods and tells you the best one.</p>
+      </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioSIX.png" alt="favorite spots picture" class="pic">
+      <div class="desc">
+        <h2>Map of Favorite Spots</h2>
+        <p class="pic-text">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+     </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioFIVE.png" alt="photo gallery picture" class="pic">
+      <div class="desc">
+        <h2>Photo Gallery</h2>
+        <p class="pic-text">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+      </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioFOUR.png" alt="calculator picture" class="pic">
+    <div class="desc">
+        <h2>Calculator</h2>
+        <p class="pic-text">Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioFOURTEEN.png" alt="to-do list picture" class="pic">
+    <div class="desc">
+        <h2>To Do List</h2>
+        <p class="pic-text">Task managment application allowing for task to be added and deleted as user sees fit.</p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioEIGHT.png" alt="picture of a logo" class="pic">
+    <div class="desc">
+        <h2>Video Streaming</h2>
+        <p class="pic-text">This project allows you to share videos and make comments on them.</p>
+        </div>
+    </div>
+    <div class="container">
+        <img src="images/portfolioTEN.png" alt="picture of a logo" class="pic">
+    <div class="desc">
+        <h2>Interactive Logo</h2>
+        <p class="pic-text">This project shows a SVG logo that was animated with CSS and some javascript.</p>
+        </div>
+    </div>
+
+    <h1 id="skills">Skills</h1>
+
+      <ul class="skills-list">
+          <li>Html/CSS</li>
+          <li class="line">&#9866;</li>
+          <li>Graphic Design</li>
+          <li class="line">&#9866;</li>
+          <li>Bootstrap</li>
+          <li class="line">&#9866;</li>
+          <li>Social Media Marketing</li>
+          <li class="line">&#9866;</li>
+          <li>JavaScript</li>
+          <li class="line">&#9866;</li>
+          <li>Ruby On Rails</li>
+          <li class="line">&#9866;</li>
+          <li>SEO</li>
+
+      </ul>
+
+    <hr />
+    <hr />
+
+    </div>
+    <footer>
+      <h1 id="contact" class="center">Contact</h1>
+      <p class="follow center">if you're interested in chatting or want more information about what i've been working on, i'd love to hear from you!</p>
+      <address class="center">
+      <a class="contact-info" href="mailto:1-773-320-5797">Phone <b>+1 (773)320-5797</b></a>
+        <br>
+      <a class="contact-info" href="mailto:rashadmad@gmail.com">Email <b>rashadmad@gmail.com</b></a>
+
+      </address>
+    <hr />
+    <hr />
+        <div>
+        <a class="left name"><b>Rashad J Madison</b></a>
+        <a class="right contact-info" href="#home"><b>Back to top</b></a>
+        </div>
+      <ul class="right bottom-nav">
+        <li class="nav"><a href="#home">HOME</a></li>
+        <li class="nav"><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="nav"><a href="#skills">SKILLS</a></li>
+        <li class="nav"><a href="#contact">CONTACT</a></li>
+      </ul>
+      </footer>
+      </body>
+    </html>

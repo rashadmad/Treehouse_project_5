@@ -1,0 +1,24 @@
+
+p {
+
+}
+
+h1,h2,h3,p {
+
+}
+
+h1 {
+  @extend %center;
+}
+
+.name {
+
+}
+
+.lead {
+  @extend %center;
+}
+
+li {
+  @include font-system(.9,8,$main-grey);
+}

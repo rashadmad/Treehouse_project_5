@@ -1,0 +1,30 @@
+//@include font-system
+@mixin font-system($size, $weight, $color) {
+
+  font-size: $size * 1em;
+  font-weight: $weight * 100;
+  color: $color;
+
+}
+
+//@include margin-system
+@mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
+
+  margin: $all-side * 1px;
+  margin-top: $top * 1px;
+  margin-left: $left * 1px;
+  margin-right: $bottom * 1px;
+  margin-bottom: $right * 1px;
+
+}
+
+//@include padding-system
+@mixin padding-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
+
+  padding: $all-side * 1px;
+  padding-top: $top * 1px;
+  padding-left: $left * 1px;
+  padding-right: $bottom * 1px;
+  padding-bottom: $right * 1px;
+
+}

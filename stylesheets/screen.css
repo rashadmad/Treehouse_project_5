@@ -2,6 +2,12 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 6, ../sass/screen.scss */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 /* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -65,4 +71,111 @@ a img {
 /* line 116, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+/* line 1, ../sass/utilities/_placeholders.scss */
+.wrapper h1, header ul, h1, .lead {
+  text-align: center;
+}
+
+/* line 5, ../sass/utilities/_placeholders.scss */
+footer #name {
+  float: left;
+}
+
+/* line 9, ../sass/utilities/_placeholders.scss */
+header ul {
+  float: right;
+}
+
+/* line 23, ../sass/utilities/_placeholders.scss */
+.wrapper .container {
+  display: inline-block;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+/* line 29, ../sass/utilities/_placeholders.scss */
+li, a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* line 2, ../sass/modules/_footer.scss */
+footer #name {
+  margin: 0px;
+  margin-top: 28px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-left: 2px;
+  padding-right: 10px;
+  padding-bottom: 2px;
+}
+
+/* line 2, ../sass/modules/_layout.scss */
+.wrapper h1 {
+  margin: 0px;
+  margin-top: 70px;
+  margin-left: 5px;
+  margin-right: 70px;
+  margin-bottom: 5px;
+}
+/* line 6, ../sass/modules/_layout.scss */
+.wrapper .container {
+  margin: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  max-width: 44%;
+}
+
+/* line 2, ../sass/modules/_header.scss */
+header h1 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #595959;
+}
+/* line 5, ../sass/modules/_header.scss */
+header ul {
+  margin-top: 27px;
+}
+/* line 11, ../sass/modules/_header.scss */
+header li {
+  font-size: 0.9em;
+  font-weight: 100;
+  color: #595959;
+  margin: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 6px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+}
+/* line 16, ../sass/modules/_header.scss */
+header li a {
+  color: #595959;
+}
+
+/* line 22, ../sass/modules/_header.scss */
+li, a {
+  margin: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+/* line 22, ../sass/modules/_typography.scss */
+li {
+  font-size: 0.9em;
+  font-weight: 800;
+  color: #595959;
 }

@@ -1,0 +1,25 @@
+header {
+  h1 {
+    @include font-system(1.5,1,$main-grey);
+  }
+  ul {
+    @extend %center;
+    @extend %right;
+      margin-top: $ul-margin-top;
+    }
+
+  li {
+    @include font-system(.9,1,$main-grey);
+    @include margin-system(10,0,0,0,0);
+    @include padding-system(6,0,0,0,0);
+
+    a {
+      color: $main-grey;
+    }
+  }
+}
+
+li, a {
+  @extend %no-deco;
+  @include margin-system(10,0,0,0,0);
+}

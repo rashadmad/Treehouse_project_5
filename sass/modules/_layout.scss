@@ -1,0 +1,11 @@
+.wrapper {
+    h1 {
+      @extend %center;
+      @include margin-system(0,70,5,70,5);
+    }
+    .container {
+      @extend %inline-block;
+      @include margin-system(10,0,0,0,0);
+      max-width: 44%;
+    }
+}

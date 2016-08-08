@@ -1,0 +1,40 @@
+%center {
+   text-align: center;
+}
+
+%left {
+  float: left;
+}
+
+%right {
+  float: right;
+}
+
+%clearFix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+%block {
+  display: block;
+}
+
+%inline-block {
+  display: inline-block;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+%no-deco {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+%no-display {
+  display: none;
+}
+
+%full-width {
+  width: 100%;
+}

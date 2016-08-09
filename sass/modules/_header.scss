@@ -6,6 +6,13 @@ header {
     @extend %center;
     @extend %right;
       margin-top: $ul-margin-top;
+      //originally skills-list
+      .top-nav {
+        @extend %margin-center;
+        @include width-system(100%,300,600){
+
+        }
+      }
     }
 
   li {

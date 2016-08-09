@@ -28,3 +28,10 @@
   padding-bottom: $right * 1px;
 
 }
+
+//@include width-system
+@mixin width-system($width, $max-width, $min-width) {
+  width: $width;
+  max-width: $max-width * 1px;
+  min-width: $min-width * 1px;
+}

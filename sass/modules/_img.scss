@@ -1,0 +1,28 @@
+#avatar-pic {
+  @extend %full-width;
+  @extend %margin-center;
+  @extend %clearLeft;
+  @include padding-system(30,0,0,0,0);
+}
+
+.container {
+
+  img {
+    @extend %full-width;
+  }
+
+  ul{
+    @extend %no-deco;
+    @include padding-system(0,0,0,0,0);
+    @include padding-system(0,0,0,0,0);
+  }
+
+  li{
+    @extend %no-deco;
+    @extend %center;
+    @include margin-system(6,0,0,0,0);
+    @include padding-system(10,0,0,0,0);
+    @include font-system(.9, 8, $main-grey); 
+  }
+
+}

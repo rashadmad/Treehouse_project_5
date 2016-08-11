@@ -5,6 +5,11 @@
   @include padding-system(30,0,0,0,0);
 }
 
+#img-box {
+  @extend %margin-center;
+  @include width-system(400,400,0);
+}
+
 .container {
 
   img {
@@ -22,7 +27,7 @@
     @extend %center;
     @include margin-system(6,0,0,0,0);
     @include padding-system(10,0,0,0,0);
-    @include font-system(.9, 8, $main-grey); 
+    @include font-system(.9, 8, $main-grey);
   }
 
 }

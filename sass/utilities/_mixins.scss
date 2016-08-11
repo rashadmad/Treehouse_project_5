@@ -1,8 +1,13 @@
 //@include font-system
-@mixin font-system($size, $weight, $color) {
+@mixin font-system($size, $weight:null, $color:null) {
 
-  font-size: $size * 1em;
-  font-weight: $weight * 100;
+
+  @if $size {
+    font-size: $size * 1em;
+  } @if $weight {
+    font-weight: $weight * 100;
+  }
+  
   color: $color;
 
 }
@@ -10,12 +15,17 @@
 //@include margin-system
 @mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
 
-  margin: $all-side * 1px;
-  margin-top: $top * 1px;
-  margin-left: $left * 1px;
-  margin-right: $bottom * 1px;
-  margin-bottom: $right * 1px;
-
+  @if $all-side {
+    margin: $all-side * 1px;
+  } @if $top {
+    margin-top: $top * 1px;
+  } @if $left {
+    margin-left: $left * 1px;
+  } @if $bottom {
+    margin-botom: $bottom * 1px;
+  } @if $right {
+    margin-botom: $right * 1px;
+  }
 }
 
 //@include padding-system
@@ -30,8 +40,14 @@
 }
 
 //@include width-system
-@mixin width-system($width, $max-width, $min-width) {
-  width: $width;
-  max-width: $max-width * 1px;
-  min-width: $min-width * 1px;
+@mixin width-system($width, $max-width: null, $min-width: null) {
+
+    width: $width;
+
+  @if $max-width {
+    max-width: $max-width * 1px;
+  }
+  @if $min-width {
+    min-width: $min-width * 1px;
+  }
 }

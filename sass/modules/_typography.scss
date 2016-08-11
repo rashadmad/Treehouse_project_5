@@ -17,6 +17,8 @@ h1 {
 
 .lead {
   @extend %center;
+  @include font-system(1.2);
+  @include margin-system(30,0,0,0,0);
 }
 
 li {

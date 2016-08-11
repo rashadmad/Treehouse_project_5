@@ -5,9 +5,13 @@
       @extend %center;
       @include margin-system(0,70,5,70,5);
     }
+    #lead-container {
+      @extend %margin-center;
+      @include width-system(1000px);
+    }
     .container {
-      display: inline-block;
-      @include margin-system(10,0,0,0,0);
+      @extend %inline-block;
+      @include margin-system(10,-4,0,0,0);
       max-width: 44%;
 
       h2 {

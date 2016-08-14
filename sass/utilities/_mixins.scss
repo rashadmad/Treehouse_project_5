@@ -1,5 +1,5 @@
 //@include font-system
-@mixin font-system($size, $weight:null, $color:null) {
+@mixin font-system($size, $weight:null, $color:null, $family:null) {
 
 
   @if $size {
@@ -7,7 +7,7 @@
   } @if $weight {
     font-weight: $weight * 100;
   }
-  
+
   color: $color;
 
 }

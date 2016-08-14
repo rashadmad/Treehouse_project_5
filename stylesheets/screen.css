@@ -2,12 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 6, ../sass/screen.scss */
-* {
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-
 /* line 5, ../../../../../../Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -219,7 +213,23 @@ li, a {
   margin-botom: 0px;
 }
 
-/* line 18, ../sass/modules/_typography.scss */
+/* line 2, ../sass/modules/_typography.scss */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 8, ../sass/modules/_typography.scss */
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 12, ../sass/modules/_typography.scss */
+h1, h2, h3, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 24, ../sass/modules/_typography.scss */
 .lead {
   font-size: 1.2em;
   margin: 30px;
@@ -229,7 +239,7 @@ li, a {
   margin-botom: 0px;
 }
 
-/* line 24, ../sass/modules/_typography.scss */
+/* line 30, ../sass/modules/_typography.scss */
 li {
   font-size: 0.9em;
   font-weight: 800;

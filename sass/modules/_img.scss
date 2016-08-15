@@ -2,7 +2,7 @@
   @extend %full-width;
   @extend %margin-center;
   @extend %clearLeft;
-  @include padding-system(30,0,0,0,0);
+  @include padding-system(30);
 }
 
 #img-box {

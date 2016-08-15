@@ -68,12 +68,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/utilities/_placeholders.scss */
-.wrapper, .wrapper h1, .wrapper .container h2, header li, h1, .lead, .container li {
+footer .follow, h1, .wrapper, .wrapper h1, .wrapper .container h2, header li, .desc p, .lead, .container li {
   text-align: center;
 }
 
 /* line 5, ../sass/utilities/_placeholders.scss */
-.wrapper #lead-container, header ul, header ul .top-nav, #avatar-pic, #img-box {
+footer .contact-info, .wrapper #lead-container, header ul, header ul .top-nav, .desc p, #avatar-pic, #img-box {
   margin: 0 auto;
 }
 
@@ -83,13 +83,25 @@ footer #name {
 }
 
 /* line 13, ../sass/utilities/_placeholders.scss */
-header ul {
+footer a #contact-info, footer #to-top, header ul {
   float: right;
+}
+
+/* line 17, ../sass/utilities/_placeholders.scss */
+.wrapper #lead-container {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* line 23, ../sass/utilities/_placeholders.scss */
 #avatar-pic {
   clear: left;
+}
+
+/* line 27, ../sass/utilities/_placeholders.scss */
+.wrapper h1 {
+  display: block;
 }
 
 /* line 31, ../sass/utilities/_placeholders.scss */
@@ -103,6 +115,11 @@ header ul {
 header li, li, a, .container ul, .container li {
   text-decoration: none;
   list-style-type: none;
+}
+
+/* line 42, ../sass/utilities/_placeholders.scss */
+footer ul {
+  display: none;
 }
 
 /* line 46, ../sass/utilities/_placeholders.scss */
@@ -120,11 +137,38 @@ footer #name {
   padding: 0px;
   padding-top: 10px;
   padding-left: 2px;
-  padding-right: 10px;
-  padding-bottom: 2px;
+  padding-botom: 10px;
+  padding-botom: 2px;
+}
+/* line 7, ../sass/modules/_footer.scss */
+footer .follow {
+  margin: 20px auto;
+  width: 0;
+  max-width: 300px;
+  min-width: 100px;
+}
+/* line 12, ../sass/modules/_footer.scss */
+footer a.contact-info {
+  margin: 10px;
+  line-height: 2;
+}
+/* line 19, ../sass/modules/_footer.scss */
+footer a #contact-info {
+  margin: 10px;
+  line-height: 2;
 }
 
-/* line 4, ../sass/modules/_layout.scss */
+/* line 5, ../sass/modules/_layout.scss */
+h1#portfolio {
+  margin: 0px;
+  margin-top: 70px;
+  margin-left: 5px;
+  margin-botom: 70px;
+  margin-botom: 5px;
+  margin: 70px 5px;
+}
+
+/* line 13, ../sass/modules/_layout.scss */
 .wrapper h1 {
   margin: 0px;
   margin-top: 70px;
@@ -132,28 +176,34 @@ footer #name {
   margin-botom: 70px;
   margin-botom: 5px;
 }
-/* line 8, ../sass/modules/_layout.scss */
+/* line 18, ../sass/modules/_layout.scss */
 .wrapper #lead-container {
   width: 1000px;
 }
-/* line 12, ../sass/modules/_layout.scss */
+/* line 23, ../sass/modules/_layout.scss */
 .wrapper .container {
   margin: 10px;
-  margin-top: -4px;
-  margin-left: 0px;
-  margin-botom: 0px;
-  margin-botom: 0px;
   max-width: 44%;
+}
+/* line 28, ../sass/modules/_layout.scss */
+.wrapper .container .desc {
+  width: 0;
+  max-width: 450px;
+  min-width: 100px;
+  margin: 50px auto;
 }
 
 /* line 1, ../sass/modules/_header.scss */
 header {
+  -webkit-background-color: #F0F0F0;
+  -moz-background-color: #F0F0F0;
+  -ms-background-color: #F0F0F0;
   background-color: #F0F0F0;
   padding: 5px;
   padding-top: 0px;
   padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding-botom: 0px;
+  padding-botom: 0px;
 }
 /* line 6, ../sass/modules/_header.scss */
 header h1 {
@@ -171,8 +221,8 @@ header ul {
   padding: 0px;
   padding-top: 0px;
   padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding-botom: 0px;
+  padding-botom: 0px;
   margin-top: 27px;
 }
 /* line 16, ../sass/modules/_header.scss */
@@ -182,6 +232,15 @@ header ul .top-nav {
   min-width: 600px;
 }
 /* line 22, ../sass/modules/_header.scss */
+header li, header nav {
+  margin: 6px;
+  padding: 10px;
+  -webkit-background-color: #ffffff;
+  -moz-background-color: #ffffff;
+  -ms-background-color: #ffffff;
+  background-color: #ffffff;
+}
+/* line 28, ../sass/modules/_header.scss */
 header li {
   font-size: 0.9em;
   font-weight: 800;
@@ -194,23 +253,14 @@ header li {
   padding: 10px;
   padding-top: 0px;
   padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding-botom: 0px;
+  padding-botom: 0px;
   color: #595959;
   font-family: 'Roboto', sans-serif;
 }
-/* line 33, ../sass/modules/_header.scss */
+/* line 39, ../sass/modules/_header.scss */
 header li a {
   color: #595959;
-}
-
-/* line 39, ../sass/modules/_header.scss */
-li, a {
-  margin: 10px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-botom: 0px;
-  margin-botom: 0px;
 }
 
 /* line 2, ../sass/modules/_typography.scss */
@@ -219,40 +269,66 @@ li, a {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 8, ../sass/modules/_typography.scss */
+/* line 7, ../sass/modules/_typography.scss */
+h1.bold {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 11, ../sass/modules/_typography.scss */
 p {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 12, ../sass/modules/_typography.scss */
+/* line 15, ../sass/modules/_typography.scss */
 h1, h2, h3, p {
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+}
+
+/* line 21, ../sass/modules/_typography.scss */
+header h1 {
+  font-size: 1.5em;
+  font-weight: 100;
+  color: #595959;
+  font-size: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 24, ../sass/modules/_typography.scss */
+/* line 29, ../sass/modules/_typography.scss */
+.desc p {
+  width: 0;
+  max-width: 340px;
+  min-width: 100px;
+}
+
+/* line 37, ../sass/modules/_typography.scss */
+.name {
+  font-size: 1.5em;
+}
+
+/* line 41, ../sass/modules/_typography.scss */
 .lead {
   font-size: 1.2em;
   margin: 30px;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-botom: 0px;
-  margin-botom: 0px;
 }
 
-/* line 30, ../sass/modules/_typography.scss */
+/* line 47, ../sass/modules/_typography.scss */
 li {
   font-size: 0.9em;
   font-weight: 800;
   color: #595959;
 }
 
+/* line 51, ../sass/modules/_typography.scss */
+.desc {
+  width: 0;
+  max-width: 450px;
+  min-width: 100px;
+}
+
 /* line 1, ../sass/modules/_img.scss */
 #avatar-pic {
   padding: 30px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
 }
 
 /* line 8, ../sass/modules/_img.scss */
@@ -267,13 +343,13 @@ li {
   padding: 0px;
   padding-top: 0px;
   padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding-botom: 0px;
+  padding-botom: 0px;
   padding: 0px;
   padding-top: 0px;
   padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding-botom: 0px;
+  padding-botom: 0px;
 }
 /* line 25, ../sass/modules/_img.scss */
 .container li {
@@ -285,8 +361,8 @@ li {
   padding: 10px;
   padding-top: 0px;
   padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
+  padding-botom: 0px;
+  padding-botom: 0px;
   font-size: 0.9em;
   font-weight: 800;
   color: #595959;

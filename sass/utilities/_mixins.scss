@@ -14,10 +14,9 @@
 
 //@include margin-system
 @mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
-
-  @if $all-side {
     margin: $all-side * 1px;
-  } @if $top {
+
+    @if $top {
     margin-top: $top * 1px;
   } @if $left {
     margin-left: $left * 1px;
@@ -28,14 +27,27 @@
   }
 }
 
+@mixin background-color($color){
+  -webkit-background-color: $color;
+  -moz-background-color: $color;
+  -ms-background-color: $color;
+  background-color: $color;
+}
+
+
 //@include padding-system
 @mixin padding-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
 
-  padding: $all-side * 1px;
-  padding-top: $top * 1px;
-  padding-left: $left * 1px;
-  padding-right: $bottom * 1px;
-  padding-bottom: $right * 1px;
+      padding: $all-side * 1px;
+      @if $top {
+      padding-top: $top * 1px;
+    } @if $left {
+      padding-left: $left * 1px;
+    } @if $bottom {
+      padding-botom: $bottom * 1px;
+    } @if $right {
+      padding-botom: $right * 1px;
+    }
 
 }
 

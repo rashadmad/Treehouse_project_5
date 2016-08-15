@@ -1,6 +1,6 @@
 header {
 
-  background-color: $header-grey;
+  @include background-color($header-grey);
   @include padding-system(5,0,0,0,0);
 
   h1 {
@@ -19,6 +19,12 @@ header {
       }
     }
 
+  li,nav {
+
+    @include margin-system(6);
+    @include padding-system(10);
+    @include background-color($white)
+  };
   li {
 
     @extend %no-deco;
@@ -26,7 +32,7 @@ header {
     @include font-system(.9,8,$main-grey);
     @include margin-system(6,10,0,0,0);
     @include padding-system(10,0,0,0,0);
-    color: $main-grey;
+      color: $main-grey;
     font-family: 'Roboto', sans-serif;
 
 
@@ -38,5 +44,4 @@ header {
 
 li, a {
   @extend %no-deco;
-  @include margin-system(10,0,0,0,0);
 }

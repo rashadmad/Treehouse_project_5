@@ -1,18 +1,34 @@
+h1 {
+  @extend %center;
+}
+
+h1#portfolio {
+  @include margin-system(0,70,5,70,5);
+  margin: 70px 5px;
+}
+
 .wrapper {
   @extend %center;
   @extend %full-width;
     h1 {
+      @extend %block;
       @extend %center;
       @include margin-system(0,70,5,70,5);
     }
     #lead-container {
       @extend %margin-center;
+      @extend %clearfix;
       @include width-system(1000px);
     }
     .container {
       @extend %inline-block;
-      @include margin-system(10,-4,0,0,0);
-      max-width: 44%;
+      @include margin-system(10);
+        max-width: 44%;
+
+        .desc {
+          @include width-system(0,450,100);
+          margin:50px auto;
+        }
 
       h2 {
         @extend %center;

@@ -4,6 +4,9 @@
    font-family: 'Roboto', sans-serif;
  }
 
+ h1.bold {
+   font-family: 'Roboto', sans-serif;
+ }
 
 p {
   font-family: 'Roboto', sans-serif;
@@ -11,22 +14,40 @@ p {
 
 h1,h2,h3,p {
   font-family: 'Roboto', sans-serif;
+  color: $main-grey;
 }
 
-h1 {
-  @extend %center;
+header {
+  h1 {
+    @include font-system(1.5,1,$main-grey);
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+  }
 }
+
+.desc {
+  p{
+    @extend %center;
+    @extend %margin-center;
+    @include width-system(0,340,100);
+  }
+}
+
 
 .name {
-
+  @include font-system(1.5);
 }
 
 .lead {
   @extend %center;
   @include font-system(1.2);
-  @include margin-system(30,0,0,0,0);
+  @include margin-system(30);
 }
 
 li {
   @include font-system(.9,8,$main-grey);
+}
+
+.desc {
+  @include width-system(0,450,100);
 }

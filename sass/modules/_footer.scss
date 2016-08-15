@@ -4,4 +4,27 @@ footer {
     @include margin-system(0,28,0,0,0);
     @include padding-system(0,10,2,10,2);
   }
+  .follow {
+    @extend %center;
+    margin: 20px auto;
+    @include width-system(0,300,100);
+  }
+  a.contact-info {
+    @include margin-system(10);
+    line-height: 2;
+  }
+  .contact-info {
+    @extend %margin-center;
+  }
+  a #contact-info{
+    @extend %right;
+    @include margin-system(10);
+    line-height: 2;
+  }
+  ul{
+    @extend %no-display;
+  }
+  #to-top{
+    @extend %right;
+  }
 }

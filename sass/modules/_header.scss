@@ -1,22 +1,29 @@
 header {
 
-  @include background-color($header-grey);
-  @include padding-system(5,0,0,0,0);
+  @include background-color($block-grey);
+  @include padding-system(5);
+    color:$light-grey;
+
+  h2 {
+
+  }
 
   h1 {
-    @include font-system(1.5,1,$main-grey);
+    @extend %block;
+    @include font-system(1.5,7,$main-grey);
+    @include margin-system(0,.67,0,.67,0)
   }
   ul {
+    @extend %clearfix;
     @extend %margin-center;
-    @extend %right;
-    @include margin-system(0,0,0,0,0);
-    @include padding-system(0,0,0,0,0);
+    @extend %center;
+    @extend %no-deco;
+    @include margin-system(0);
+    @include padding-system(0);
       margin-top: $ul-margin-top;
+      width: 100%;
       //originally skills-list
-      .top-nav {
-        @extend %margin-center;
-        @include width-system(100%,300,600);
-      }
+
     }
 
   li,nav {
@@ -24,16 +31,13 @@ header {
     @include margin-system(6);
     @include padding-system(10);
     @include background-color($white)
-  };
+  }
   li {
 
-    @extend %no-deco;
     @extend %center;
     @include font-system(.9,8,$main-grey);
-    @include margin-system(6,10,0,0,0);
-    @include padding-system(10,0,0,0,0);
       color: $main-grey;
-    font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
 
 
     a {

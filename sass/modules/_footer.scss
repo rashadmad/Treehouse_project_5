@@ -1,4 +1,9 @@
 footer {
+
+  @include background-color($block-grey);
+  @include padding-system(5);
+    color:$light-grey;
+
   #name {
     @extend %left;
     @include margin-system(0,28,0,0,0);
@@ -21,8 +26,15 @@ footer {
     @include margin-system(10);
     line-height: 2;
   }
+  address {
+    @extend %center;
+  }
   ul{
     @extend %no-display;
+    li {
+      @include margin-system(6);
+      @include padding-system(10);
+    }
   }
   #to-top{
     @extend %right;

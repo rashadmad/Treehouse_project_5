@@ -18,15 +18,15 @@
 
   ul{
     @extend %no-deco;
-    @include padding-system(0,0,0,0,0);
-    @include padding-system(0,0,0,0,0);
+    @include padding-system(0);
+    @include padding-system(0);
   }
 
   li{
     @extend %no-deco;
     @extend %center;
-    @include margin-system(6,0,0,0,0);
-    @include padding-system(10,0,0,0,0);
+    @include margin-system(6);
+    @include padding-system(10);
     @include font-system(.9, 8, $main-grey);
   }
 

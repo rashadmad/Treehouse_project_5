@@ -4,44 +4,39 @@
    font-family: 'Roboto', sans-serif;
  }
 
- h1.bold {
-   font-family: 'Roboto', sans-serif;
- }
-
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1,h2,h3,p {
+h1,h2,h3,p,h1.bold {
   font-family: 'Roboto', sans-serif;
   color: $main-grey;
 }
 
 header {
   h1 {
-    @include font-system(1.5,1,$main-grey);
+    @include font-system(1.5,$color:$main-grey);
+    font-weight: bold;
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
   }
 }
 
 .desc {
+  h2 {
+    @include font-system(1.5,$color:$main-grey);
+  }
+
   p{
-    @extend %center;
     @extend %margin-center;
-    @include width-system(0,340,100);
+    @include width-system(340,340,100);
+      margin:50px auto;
   }
 }
 
 
-.name {
-  @include font-system(1.5);
-}
-
 .lead {
+
+  @extend %no-deco;
   @extend %center;
   @include font-system(1.2);
-  @include margin-system(30);
+  @include margin-system($all-side:30);
 }
 
 li {

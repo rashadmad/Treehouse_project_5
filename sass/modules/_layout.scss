@@ -1,3 +1,13 @@
+body {
+
+  @include margin-system(8);
+
+hr {
+  @extend %hide;
+    margin: 25px 0;
+}
+
+
 h1 {
   @extend %center;
 }
@@ -21,17 +31,19 @@ h1#portfolio {
       @include width-system(1000px);
     }
     .container {
-      @extend %inline-block;
-      @include margin-system(10);
-        max-width: 44%;
+
+        img{
+          @extend %full-width;
+        }
 
         .desc {
           @include width-system(0,450,100);
-          margin:50px auto;
+            margin:50px auto;
         }
 
       h2 {
         @extend %center;
         }
+      }
     }
-}
+  }

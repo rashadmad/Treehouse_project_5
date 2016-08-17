@@ -14,16 +14,33 @@
 
 //@include margin-system
 @mixin margin-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
-    margin: $all-side * 1px;
+
+  margin: $all-side * 1px;
 
     @if $top {
     margin-top: $top * 1px;
+  } @if $right {
+    margin-right: $right * 1px;
+  } @if $bottom {
+    margin-bottom: $bottom * 1px;
   } @if $left {
     margin-left: $left * 1px;
-  } @if $bottom {
-    margin-botom: $bottom * 1px;
+  }
+}
+
+//@include padding-system
+@mixin padding-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
+
+  padding: $all-side * 1px;
+
+    @if $top {
+    padding-top: $top * 1px;
   } @if $right {
-    margin-botom: $right * 1px;
+    padding-right: $right * 1px;
+  } @if $bottom {
+    padding-bottom: $bottom * 1px;
+  } @if $left {
+    padding-left: $left * 1px;
   }
 }
 
@@ -32,23 +49,6 @@
   -moz-background-color: $color;
   -ms-background-color: $color;
   background-color: $color;
-}
-
-
-//@include padding-system
-@mixin padding-system($all-side, $top: null, $left: null, $bottom: null, $right: null) {
-
-      padding: $all-side * 1px;
-      @if $top {
-      padding-top: $top * 1px;
-    } @if $left {
-      padding-left: $left * 1px;
-    } @if $bottom {
-      padding-botom: $bottom * 1px;
-    } @if $right {
-      padding-botom: $right * 1px;
-    }
-
 }
 
 //@include width-system

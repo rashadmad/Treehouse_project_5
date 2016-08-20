@@ -30,6 +30,8 @@ h1#portfolio {
       @extend %clearfix;
       @include width-system(1000px);
     }
+  
+
     .container {
 
         img{
@@ -37,12 +39,12 @@ h1#portfolio {
         }
 
         .desc {
-          @include width-system(0,450,100);
+          @include width-system(450,450,200);
             margin:50px auto;
         }
 
       h2 {
-        @extend %center;
+          @extend %center;
         }
       }
     }

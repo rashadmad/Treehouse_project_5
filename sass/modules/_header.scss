@@ -4,14 +4,10 @@ header {
   @include padding-system(5);
     color:$light-grey;
 
-  h2 {
-
-  }
-
   h1 {
     @extend %block;
     @include font-system(1.5,7,$main-grey);
-    @include margin-system(0,.67,0,.67,0)
+    @include margin-system(0,20,0,0,0);
   }
   ul {
     @extend %clearfix;
@@ -28,9 +24,11 @@ header {
 
   li,nav {
 
+    @extend %no-deco;
     @include margin-system(6);
     @include padding-system(10);
-    @include background-color($white)
+    @include background-color($white);
+
   }
   li {
 

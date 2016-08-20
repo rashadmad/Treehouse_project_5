@@ -1,18 +1,27 @@
 footer {
 
+  a {
+    @extend %no-deco;
+    color: $main-grey;
+  }
   @include background-color($block-grey);
-  @include padding-system(5);
+  @include padding-system(20);
     color:$light-grey;
 
-  #name {
-    @extend %left;
+    h1 {
+      @include font-system(1.5,7,$main-grey);
+      @include margin-system(10);
+    }
+  b {
     @include margin-system(0,28,0,0,0);
     @include padding-system(0,10,2,10,2);
   }
+
   .follow {
     @extend %center;
-    margin: 20px auto;
-    @include width-system(0,300,100);
+    @include width-system(300,300,100);
+      font-weight: 500;
+      margin: 20px auto;
   }
   a.contact-info {
     @include margin-system(10);
@@ -39,4 +48,15 @@ footer {
   #to-top{
     @extend %right;
   }
+}
+
+.bottom-nav {
+  @include margin-system(10);
+}
+
+.bottom-nav:first-of-type {
+  @extend %left;
+}
+.bottom-nav:last-of-type {
+  @extend %right;
 }

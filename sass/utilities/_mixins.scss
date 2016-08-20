@@ -1,5 +1,5 @@
 //@include font-system
-@mixin font-system($size, $weight:null, $color:null, $family:null) {
+@mixin font-system($size, $weight:null, $color:null, $family:null, $line-height:null) {
 
 
   @if $size {
@@ -8,6 +8,8 @@
     font-weight: $weight * 100;
   }
 
+  font-family: 'Roboto', sans-serif;
+  line-height:$line-height;
   color: $color;
 
 }

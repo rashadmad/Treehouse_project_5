@@ -9,18 +9,22 @@ h1,h2,h3,p,h1.bold {
   color: $main-grey;
 }
 
+.bold {
+  @include font-system(2,7,$main-grey);
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
   h1 {
     @include font-system(1.5,$color:$main-grey);
     font-weight: bold;
-    font-size: 100%;
     font-family: 'Roboto', sans-serif;
   }
 }
 
 .desc {
   h2 {
-    @include font-system(1.5,$color:$main-grey);
+    @include font-system(1.5,7,$main-grey);
   }
 
   p{
@@ -30,13 +34,16 @@ header {
   }
 }
 
+.contact {
+  @extend %no-display;
+  @include font-system(1.5,7,$main-grey);
+}
 
 .lead {
-
   @extend %no-deco;
   @extend %center;
   @include font-system(1.2);
-  @include margin-system($all-side:30);
+  @include margin-system(30);
 }
 
 li {
@@ -45,4 +52,11 @@ li {
 
 .desc {
   @include width-system(0,450,100);
+}
+
+.skills-list {
+  @extend %margin-center;
+  @include font-system(1.2,8,$main-grey,$line-height:200%);
+  @include width-system(600,600,100);
+  font-family: 'Roboto', sans-serif;
 }

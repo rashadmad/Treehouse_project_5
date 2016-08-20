@@ -9,15 +9,15 @@
     </head>
 
     <body>
-    <header id="home" class="clearfix">
+    <header>
 
-        <h1>Rashad J Madison</h1>
+        <h1 id="home">Rashad J Madison</h1>
 
         <ul>
-            <li class="nav"><a href="#home">HOME</a></li>
-            <li class="nav"><a href="#portfolio">PORTFOLIO</a></li>
-            <li class="nav"><a href="#skills">SKILLS</a></li>
-            <li class="nav"><a href="#contact">CONTACT</a></li>
+            <li class="nav" href="#home"><a href="#home">HOME</a></li>
+            <li class="nav" href="#portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="nav" href="#skills"><a href="#skills">SKILLS</a></li>
+            <li class="nav" href="#contact"><a href="#contact">CONTACT</a></li>
         </ul>
 
     <div id="img-box">
@@ -31,7 +31,7 @@
 
     <div class="wrapper">
 
-    <h1 class="bold">PORTFOLIO</h1>
+    <h1 id="portfolio" class="bold">PORTFOLIO</h1>
 
     <div class="container">
         <img src="images/portfolioONE.png" alt="picture of marketing page">
@@ -97,9 +97,9 @@
         </div>
     </div>
 
-    <h1 id="skills">Skills</h1>
+    <h1 id="skills" class="bold">Skills</h1>
 
-      <ul class="top-nav">
+      <ul class="skills-list">
           <li>Html/CSS</li>
           <li class="line">&#9866;</li>
           <li>Graphic Design</li>
@@ -121,7 +121,7 @@
 
     </div>
     <footer>
-      <h1 id="contact">Contact</h1>
+      <h1 class="bold" id="contact">Contact</h1>
       <p class="follow">if you're interested in chatting or want more information about what i've been working on, i'd love to hear from you!</p>
       <address class="center">
       <a class="contact-info" href="mailto:1-773-320-5797">Phone <b>+1 (773)320-5797</b></a>
@@ -129,12 +129,6 @@
       <a class="contact-info" href="mailto:rashadmad@gmail.com">Email <b>rashadmad@gmail.com</b></a>
 
       </address>
-    <hr />
-    <hr />
-        <div>
-        <a id="name"><b>Rashad J Madison</b></a>
-        <a id="contact-info" href="#home"><b id="to-top">Back to top</b></a>
-        </div>
       <ul>
         <li><a href="#home">HOME</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -142,5 +136,10 @@
         <li><a href="#contact">CONTACT</a></li>
       </ul>
       </footer>
+    
+          <div class="contact-info">
+            <a class="bottom-nav" ><b>Rashad J Madison</b></a>
+            <a class="bottom-nav" href="#home"><b>Back to top</b></a>
+          </div>
       </body>
     </html>

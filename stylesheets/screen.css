@@ -73,17 +73,17 @@ footer .follow, footer address, body h1, body .wrapper, body .wrapper h1, body .
 }
 
 /* line 5, ../sass/utilities/_placeholders.scss */
-footer .contact-info, body .wrapper #lead-container, header ul, .desc p, #avatar-pic, #img-box {
+footer .contact-info, body .wrapper #lead-container, header ul, .desc p, .skills-list, #avatar-pic, #img-box {
   margin: 0 auto;
 }
 
 /* line 9, ../sass/utilities/_placeholders.scss */
-footer #name {
+.bottom-nav:first-of-type {
   float: left;
 }
 
 /* line 13, ../sass/utilities/_placeholders.scss */
-footer a #contact-info, footer #to-top {
+footer a #contact-info, footer #to-top, .bottom-nav:last-of-type {
   float: right;
 }
 
@@ -105,13 +105,13 @@ body .wrapper h1, header h1 {
 }
 
 /* line 37, ../sass/utilities/_placeholders.scss */
-header ul, li, a, .lead, .container ul, .container li {
+footer a, header ul, header li, header nav, li, a, .lead, .container ul, .container li {
   text-decoration: none;
   list-style-type: none;
 }
 
 /* line 42, ../sass/utilities/_placeholders.scss */
-footer ul {
+footer ul, .contact {
   display: none;
 }
 
@@ -131,11 +131,23 @@ footer {
   -moz-background-color: #F0F0F0;
   -ms-background-color: #F0F0F0;
   background-color: #F0F0F0;
-  padding: 5px;
+  padding: 20px;
   color: #F8F8F8;
 }
-/* line 7, ../sass/modules/_footer.scss */
-footer #name {
+/* line 3, ../sass/modules/_footer.scss */
+footer a {
+  color: #595959;
+}
+/* line 11, ../sass/modules/_footer.scss */
+footer h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+  margin: 10px;
+}
+/* line 15, ../sass/modules/_footer.scss */
+footer b {
   margin: 0px;
   margin-top: 28px;
   margin-right: 0px;
@@ -147,27 +159,33 @@ footer #name {
   padding-bottom: 10px;
   padding-left: 2px;
 }
-/* line 12, ../sass/modules/_footer.scss */
+/* line 20, ../sass/modules/_footer.scss */
 footer .follow {
-  margin: 20px auto;
-  width: 0;
+  width: 300;
   max-width: 300px;
   min-width: 100px;
+  font-weight: 500;
+  margin: 20px auto;
 }
-/* line 17, ../sass/modules/_footer.scss */
+/* line 26, ../sass/modules/_footer.scss */
 footer a.contact-info {
   margin: 10px;
   line-height: 2;
 }
-/* line 24, ../sass/modules/_footer.scss */
+/* line 33, ../sass/modules/_footer.scss */
 footer a #contact-info {
   margin: 10px;
   line-height: 2;
 }
-/* line 34, ../sass/modules/_footer.scss */
+/* line 43, ../sass/modules/_footer.scss */
 footer ul li {
   margin: 6px;
   padding: 10px;
+}
+
+/* line 53, ../sass/modules/_footer.scss */
+.bottom-nav {
+  margin: 10px;
 }
 
 /* line 1, ../sass/modules/_layout.scss */
@@ -199,11 +217,11 @@ body .wrapper h1 {
 body .wrapper #lead-container {
   width: 1000px;
 }
-/* line 39, ../sass/modules/_layout.scss */
+/* line 41, ../sass/modules/_layout.scss */
 body .wrapper .container .desc {
-  width: 0;
+  width: 450;
   max-width: 450px;
-  min-width: 100px;
+  min-width: 200px;
   margin: 50px auto;
 }
 
@@ -216,25 +234,26 @@ header {
   padding: 5px;
   color: #F8F8F8;
 }
-/* line 11, ../sass/modules/_header.scss */
+/* line 7, ../sass/modules/_header.scss */
 header h1 {
   font-size: 1.5em;
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   color: #595959;
   margin: 0px;
-  margin-top: 0.67px;
+  margin-top: 20px;
   margin-right: 0px;
-  margin-bottom: 0.67px;
+  margin-bottom: 0px;
   margin-left: 0px;
 }
-/* line 16, ../sass/modules/_header.scss */
+/* line 12, ../sass/modules/_header.scss */
 header ul {
   margin: 0px;
   padding: 0px;
   margin-top: 27px;
   width: 100%;
 }
-/* line 29, ../sass/modules/_header.scss */
+/* line 25, ../sass/modules/_header.scss */
 header li, header nav {
   margin: 6px;
   padding: 10px;
@@ -243,15 +262,16 @@ header li, header nav {
   -ms-background-color: #ffffff;
   background-color: #ffffff;
 }
-/* line 35, ../sass/modules/_header.scss */
+/* line 33, ../sass/modules/_header.scss */
 header li {
   font-size: 0.9em;
   font-weight: 800;
+  font-family: 'Roboto', sans-serif;
   color: #595959;
   color: #595959;
   font-family: 'Roboto', sans-serif;
 }
-/* line 43, ../sass/modules/_header.scss */
+/* line 41, ../sass/modules/_header.scss */
 header li a {
   color: #595959;
 }
@@ -268,21 +288,32 @@ h1, h2, h3, p, h1.bold {
   color: #595959;
 }
 
-/* line 13, ../sass/modules/_typography.scss */
-header h1 {
-  font-size: 1.5em;
+/* line 12, ../sass/modules/_typography.scss */
+.bold {
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   color: #595959;
-  font-weight: bold;
-  font-size: 100%;
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 22, ../sass/modules/_typography.scss */
+/* line 18, ../sass/modules/_typography.scss */
+header h1 {
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 26, ../sass/modules/_typography.scss */
 .desc h2 {
   font-size: 1.5em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   color: #595959;
 }
-/* line 26, ../sass/modules/_typography.scss */
+/* line 30, ../sass/modules/_typography.scss */
 .desc p {
   width: 340;
   max-width: 340px;
@@ -290,24 +321,47 @@ header h1 {
   margin: 50px auto;
 }
 
-/* line 34, ../sass/modules/_typography.scss */
-.lead {
-  font-size: 1.2em;
-  margin: 30px;
-}
-
-/* line 42, ../sass/modules/_typography.scss */
-li {
-  font-size: 0.9em;
-  font-weight: 800;
+/* line 37, ../sass/modules/_typography.scss */
+.contact {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
   color: #595959;
 }
 
-/* line 46, ../sass/modules/_typography.scss */
+/* line 42, ../sass/modules/_typography.scss */
+.lead {
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  margin: 30px;
+}
+
+/* line 49, ../sass/modules/_typography.scss */
+li {
+  font-size: 0.9em;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+}
+
+/* line 53, ../sass/modules/_typography.scss */
 .desc {
   width: 0;
   max-width: 450px;
   min-width: 100px;
+}
+
+/* line 57, ../sass/modules/_typography.scss */
+.skills-list {
+  font-size: 1.2em;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  line-height: 200%;
+  color: #595959;
+  width: 600;
+  max-width: 600px;
+  min-width: 100px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* line 1, ../sass/modules/_img.scss */
@@ -333,5 +387,6 @@ li {
   padding: 10px;
   font-size: 0.9em;
   font-weight: 800;
+  font-family: 'Roboto', sans-serif;
   color: #595959;
 }

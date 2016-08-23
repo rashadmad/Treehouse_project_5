@@ -68,59 +68,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 1, ../sass/utilities/_placeholders.scss */
-footer .follow, footer address, body h1, body .wrapper, body .wrapper h1, body .wrapper .container h2, header ul, header li, .lead, .container li {
+footer .follow, footer address, body h1, body .wrapper, body .wrapper h1, body .wrapper .container h2, header ul, header li, p, .lead, .container li {
   text-align: center;
 }
 
-/* line 5, ../sass/utilities/_placeholders.scss */
+/* line 17, ../sass/utilities/_placeholders.scss */
 footer .contact-info, body .wrapper #lead-container, header ul, .desc p, .skills-list, #avatar-pic, #img-box {
   margin: 0 auto;
 }
 
-/* line 9, ../sass/utilities/_placeholders.scss */
+/* line 21, ../sass/utilities/_placeholders.scss */
 .bottom-nav:first-of-type {
   float: left;
 }
 
-/* line 13, ../sass/utilities/_placeholders.scss */
+/* line 25, ../sass/utilities/_placeholders.scss */
 footer a #contact-info, footer #to-top, .bottom-nav:last-of-type {
   float: right;
 }
 
-/* line 17, ../sass/utilities/_placeholders.scss */
-body .wrapper #lead-container, header ul {
+/* line 29, ../sass/utilities/_placeholders.scss */
+body .wrapper #lead-container, header, header ul, #img-box {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 23, ../sass/utilities/_placeholders.scss */
+/* line 35, ../sass/utilities/_placeholders.scss */
 #avatar-pic {
   clear: left;
 }
 
-/* line 27, ../sass/utilities/_placeholders.scss */
-body .wrapper h1, header h1 {
+/* line 39, ../sass/utilities/_placeholders.scss */
+body .wrapper h1, header h1, #img-box {
   display: block;
 }
 
-/* line 37, ../sass/utilities/_placeholders.scss */
+/* line 49, ../sass/utilities/_placeholders.scss */
 footer a, header ul, header li, header nav, li, a, .lead, .container ul, .container li {
   text-decoration: none;
   list-style-type: none;
 }
 
-/* line 42, ../sass/utilities/_placeholders.scss */
+/* line 54, ../sass/utilities/_placeholders.scss */
 footer ul, .contact {
   display: none;
 }
 
-/* line 46, ../sass/utilities/_placeholders.scss */
+/* line 58, ../sass/utilities/_placeholders.scss */
 body hr {
   visibility: hidden;
 }
 
-/* line 50, ../sass/utilities/_placeholders.scss */
+/* line 62, ../sass/utilities/_placeholders.scss */
 body .wrapper, body .wrapper .container img, #avatar-pic, .container img {
   width: 100%;
 }
@@ -134,19 +134,26 @@ footer {
   padding: 20px;
   color: #F8F8F8;
 }
-/* line 3, ../sass/modules/_footer.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 1, ../sass/modules/_footer.scss */
+  footer {
+    height: 300px;
+  }
+}
+/* line 7, ../sass/modules/_footer.scss */
 footer a {
   color: #595959;
 }
-/* line 11, ../sass/modules/_footer.scss */
+/* line 15, ../sass/modules/_footer.scss */
 footer h1 {
   font-size: 1.5em;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   color: #595959;
   margin: 10px;
+  margin-top: 40px;
 }
-/* line 15, ../sass/modules/_footer.scss */
+/* line 19, ../sass/modules/_footer.scss */
 footer b {
   margin: 0px;
   margin-top: 28px;
@@ -159,7 +166,7 @@ footer b {
   padding-bottom: 10px;
   padding-left: 2px;
 }
-/* line 20, ../sass/modules/_footer.scss */
+/* line 24, ../sass/modules/_footer.scss */
 footer .follow {
   width: 300;
   max-width: 300px;
@@ -167,25 +174,50 @@ footer .follow {
   font-weight: 500;
   margin: 20px auto;
 }
-/* line 26, ../sass/modules/_footer.scss */
+/* line 30, ../sass/modules/_footer.scss */
 footer a.contact-info {
   margin: 10px;
   line-height: 2;
 }
-/* line 33, ../sass/modules/_footer.scss */
+/* line 37, ../sass/modules/_footer.scss */
 footer a #contact-info {
   margin: 10px;
   line-height: 2;
 }
-/* line 43, ../sass/modules/_footer.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 45, ../sass/modules/_footer.scss */
+  footer ul {
+    display: inline;
+    float: right;
+    content: "";
+    display: table;
+    clear: both;
+    margin: 10px;
+    margin-top: 80px;
+  }
+}
+/* line 54, ../sass/modules/_footer.scss */
 footer ul li {
   margin: 6px;
   padding: 10px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 54, ../sass/modules/_footer.scss */
+  footer ul li {
+    display: inline;
+  }
+}
 
-/* line 53, ../sass/modules/_footer.scss */
+/* line 67, ../sass/modules/_footer.scss */
 .bottom-nav {
   margin: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 74, ../sass/modules/_footer.scss */
+  .bottom-nav:last-of-type {
+    display: none;
+  }
 }
 
 /* line 1, ../sass/modules/_layout.scss */
@@ -205,7 +237,14 @@ body h1#portfolio {
   margin-left: 5px;
   margin: 70px 5px;
 }
-/* line 23, ../sass/modules/_layout.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 20, ../sass/modules/_layout.scss */
+  body .wrapper {
+    text-align: center;
+    width: 100%;
+  }
+}
+/* line 27, ../sass/modules/_layout.scss */
 body .wrapper h1 {
   margin: 0px;
   margin-top: 70px;
@@ -213,16 +252,45 @@ body .wrapper h1 {
   margin-bottom: 70px;
   margin-left: 5px;
 }
-/* line 28, ../sass/modules/_layout.scss */
+/* line 32, ../sass/modules/_layout.scss */
 body .wrapper #lead-container {
   width: 1000px;
 }
-/* line 41, ../sass/modules/_layout.scss */
+/* line 37, ../sass/modules/_layout.scss */
+body .wrapper #lead {
+  width: 420px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 40, ../sass/modules/_layout.scss */
+  body .wrapper #img-box {
+    float: right;
+    margin: 0 auto;
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 48, ../sass/modules/_layout.scss */
+  body .wrapper .container {
+    max-width: 44%;
+    margin: 10px;
+    display: inline-block;
+  }
+}
+/* line 58, ../sass/modules/_layout.scss */
 body .wrapper .container .desc {
   width: 450;
   max-width: 450px;
   min-width: 200px;
   margin: 50px auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 58, ../sass/modules/_layout.scss */
+  body .wrapper .container .desc {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    height: 180px;
+  }
 }
 
 /* line 1, ../sass/modules/_header.scss */
@@ -234,12 +302,8 @@ header {
   padding: 5px;
   color: #F8F8F8;
 }
-/* line 7, ../sass/modules/_header.scss */
+/* line 8, ../sass/modules/_header.scss */
 header h1 {
-  font-size: 1.5em;
-  font-weight: 700;
-  font-family: 'Roboto', sans-serif;
-  color: #595959;
   margin: 0px;
   margin-top: 20px;
   margin-right: 0px;
@@ -253,7 +317,20 @@ header ul {
   margin-top: 27px;
   width: 100%;
 }
-/* line 25, ../sass/modules/_header.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 12, ../sass/modules/_header.scss */
+  header ul {
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 12, ../sass/modules/_header.scss */
+  header ul {
+    margin-right: 30px;
+    text-align: right;
+  }
+}
+/* line 31, ../sass/modules/_header.scss */
 header li, header nav {
   margin: 6px;
   padding: 10px;
@@ -262,16 +339,30 @@ header li, header nav {
   -ms-background-color: #ffffff;
   background-color: #ffffff;
 }
-/* line 33, ../sass/modules/_header.scss */
+/* line 39, ../sass/modules/_header.scss */
 header li {
-  font-size: 0.9em;
-  font-weight: 800;
-  font-family: 'Roboto', sans-serif;
-  color: #595959;
-  color: #595959;
-  font-family: 'Roboto', sans-serif;
+  padding: 13px;
 }
-/* line 41, ../sass/modules/_header.scss */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 39, ../sass/modules/_header.scss */
+  header li {
+    background-color: #F0F0F0;
+    display: inline-block;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 39, ../sass/modules/_header.scss */
+  header li {
+    background-color: #F0F0F0;
+    display: inline-block;
+    background-color: transparent;
+    text-align: right;
+    font-size: 1.2em;
+  }
+}
+/* line 59, ../sass/modules/_header.scss */
 header li a {
   color: #595959;
 }
@@ -288,40 +379,84 @@ h1, h2, h3, p, h1.bold {
   color: #595959;
 }
 
-/* line 12, ../sass/modules/_typography.scss */
+/* line 13, ../sass/modules/_typography.scss */
+header h1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+}
+@media (min-width: 1024px) {
+  /* line 13, ../sass/modules/_typography.scss */
+  header h1 {
+    float: left;
+  }
+}
+/* line 19, ../sass/modules/_typography.scss */
+header li {
+  font-size: 1.1em;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+}
+
+/* line 24, ../sass/modules/_typography.scss */
+a {
+  font-size: 0.8em;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+}
+
+/* line 31, ../sass/modules/_typography.scss */
+b {
+  font-size: 0.9em;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  color: #595959;
+  color: #595959;
+}
+
+/* line 36, ../sass/modules/_typography.scss */
 .bold {
   font-size: 2em;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   color: #595959;
-  font-family: 'Roboto', sans-serif;
 }
 
-/* line 18, ../sass/modules/_typography.scss */
+/* line 41, ../sass/modules/_typography.scss */
 header h1 {
   font-size: 1.5em;
+  font-weight: 700;
   font-family: 'Roboto', sans-serif;
   color: #595959;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
 }
 
-/* line 26, ../sass/modules/_typography.scss */
+/* line 48, ../sass/modules/_typography.scss */
 .desc h2 {
   font-size: 1.5em;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
   color: #595959;
 }
-/* line 30, ../sass/modules/_typography.scss */
+/* line 52, ../sass/modules/_typography.scss */
 .desc p {
   width: 340;
   max-width: 340px;
   min-width: 100px;
   margin: 50px auto;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 52, ../sass/modules/_typography.scss */
+  .desc p {
+    width: 340;
+    max-width: 340px;
+    min-width: 100px;
+  }
+}
 
-/* line 37, ../sass/modules/_typography.scss */
+/* line 62, ../sass/modules/_typography.scss */
 .contact {
   font-size: 1.5em;
   font-weight: 700;
@@ -329,14 +464,23 @@ header h1 {
   color: #595959;
 }
 
-/* line 42, ../sass/modules/_typography.scss */
+/* line 67, ../sass/modules/_typography.scss */
 .lead {
   font-size: 1.2em;
   font-family: 'Roboto', sans-serif;
   margin: 30px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 67, ../sass/modules/_typography.scss */
+  .lead {
+    text-align: left;
+    margin: 45px 0px 0px 50px;
+    line-height: 1.3;
+    font-size: 1.5em;
+  }
+}
 
-/* line 49, ../sass/modules/_typography.scss */
+/* line 80, ../sass/modules/_typography.scss */
 li {
   font-size: 0.9em;
   font-weight: 800;
@@ -344,14 +488,14 @@ li {
   color: #595959;
 }
 
-/* line 53, ../sass/modules/_typography.scss */
+/* line 84, ../sass/modules/_typography.scss */
 .desc {
   width: 0;
   max-width: 450px;
   min-width: 100px;
 }
 
-/* line 57, ../sass/modules/_typography.scss */
+/* line 88, ../sass/modules/_typography.scss */
 .skills-list {
   font-size: 1.2em;
   font-weight: 800;
@@ -361,27 +505,48 @@ li {
   width: 600;
   max-width: 600px;
   min-width: 100px;
-  font-family: 'Roboto', sans-serif;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 92, ../sass/modules/_typography.scss */
+  .skills-list li {
+    display: inline;
+    padding: 10px;
+    line-height: 4;
+  }
 }
 
 /* line 1, ../sass/modules/_img.scss */
 #avatar-pic {
   padding: 30px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 1, ../sass/modules/_img.scss */
+  #avatar-pic {
+    display: inline-block;
+    max-width: 450px;
+  }
+}
 
-/* line 8, ../sass/modules/_img.scss */
+/* line 13, ../sass/modules/_img.scss */
 #img-box {
   width: 400;
   max-width: 400px;
   min-width: 0px;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* line 13, ../sass/modules/_img.scss */
+  #img-box {
+    float: right;
+    margin: 0 auto;
+    width: 40%;
+  }
+}
 
-/* line 19, ../sass/modules/_img.scss */
+/* line 31, ../sass/modules/_img.scss */
 .container ul {
   padding: 0px;
-  padding: 0px;
 }
-/* line 25, ../sass/modules/_img.scss */
+/* line 36, ../sass/modules/_img.scss */
 .container li {
   margin: 6px;
   padding: 10px;

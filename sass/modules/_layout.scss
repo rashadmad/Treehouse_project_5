@@ -20,6 +20,10 @@ h1#portfolio {
 .wrapper {
   @extend %center;
   @extend %full-width;
+    @include tablet-width{
+      text-align: center;
+      width: 100%;
+    }
     h1 {
       @extend %block;
       @extend %center;
@@ -30,10 +34,23 @@ h1#portfolio {
       @extend %clearfix;
       @include width-system(1000px);
     }
-  
+    #lead {
+      width: 420px;
+    }
+    #img-box {
+      @include tablet-width{
+        float: right;
+        margin:0 auto;
+        width: 40%;
+      }
+    }
 
     .container {
-
+      @include tablet-width{
+        max-width: 44%;
+        margin: 10px;
+        display: inline-block;
+      }
         img{
           @extend %full-width;
         }
@@ -41,6 +58,12 @@ h1#portfolio {
         .desc {
           @include width-system(450,450,200);
             margin:50px auto;
+            @include tablet-width{
+              width: 100%;
+              height: auto;
+              overflow: auto;
+              height: 180px;
+            }
         }
 
       h2 {

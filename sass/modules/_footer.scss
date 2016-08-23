@@ -1,5 +1,9 @@
 footer {
 
+  @include tablet-width {
+    height:300px;
+  }
+
   a {
     @extend %no-deco;
     color: $main-grey;
@@ -10,7 +14,7 @@ footer {
 
     h1 {
       @include font-system(1.5,7,$main-grey);
-      @include margin-system(10);
+      @include margin-system(10,$top:40);
     }
   b {
     @include margin-system(0,28,0,0,0);
@@ -40,9 +44,19 @@ footer {
   }
   ul{
     @extend %no-display;
+    @include tablet-width{
+      display: inline;
+      float: right;
+      @include clearfix();
+      @include margin-system(10,$top:80);
+    }
+
     li {
       @include margin-system(6);
       @include padding-system(10);
+        @include tablet-width{
+          display: inline;
+        }
     }
   }
   #to-top{
@@ -59,4 +73,7 @@ footer {
 }
 .bottom-nav:last-of-type {
   @extend %right;
+  @include tablet-width{
+    display: none;
+  }
 }

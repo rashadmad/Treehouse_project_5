@@ -3,11 +3,23 @@
   @extend %margin-center;
   @extend %clearLeft;
   @include padding-system(30);
+    @include tablet-width{
+      display: inline-block;
+      max-width: 450px;
+
+    }
 }
 
 #img-box {
   @extend %margin-center;
+  @extend %clearfix;
+  @extend %block;
   @include width-system(400,400,0);
+  @include tablet-width{
+    float: right;
+    margin: 0 auto;
+    width: 40%;
+  }
 }
 
 .container {
@@ -18,7 +30,6 @@
 
   ul{
     @extend %no-deco;
-    @include padding-system(0);
     @include padding-system(0);
   }
 

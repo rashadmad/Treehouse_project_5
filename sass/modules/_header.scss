@@ -1,29 +1,38 @@
 header {
 
-  @extend %clearfix;
   @include background-color($block-grey);
   @include padding-system(5);
+
     color:$light-grey;
+
+    @include tablet-width {
+      height: 480px;
+    }
+    @include desktop-width {
+      height: 480px;
+    }
 
   h1 {
     @extend %block;
     @include margin-system(0,20,0,0,0);
+      @include desktop-width {
+        float: left;
+        @include margin-system(0,$top:20,$left:15);
+      }
   }
   ul {
-    @extend %clearfix;
+
     @extend %margin-center;
     @extend %center;
     @extend %no-deco;
     @include margin-system(0);
     @include padding-system(0);
-      margin-top: $ul-margin-top;
-      width: 100%;
       //originally skills-list
       @include tablet-width{
         margin-right: 30px;
-      }@include desktop-width{
-        margin-right: 30px;
-        text-align: right;
+      }
+      @include desktop-width{
+        float: right;
       }
 
     }
@@ -54,7 +63,6 @@ header {
           text-align: right;
           font-size: 1.2em;
         }
-
 
     a {
       color: $main-grey;

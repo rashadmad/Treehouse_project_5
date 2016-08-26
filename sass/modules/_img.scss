@@ -8,6 +8,11 @@
       max-width: 450px;
 
     }
+    @include desktop-width{
+      display: inline-block;
+      max-width: 450px;
+
+    }
 }
 
 #img-box {
@@ -18,7 +23,13 @@
   @include tablet-width{
     float: right;
     margin: 0 auto;
+    width: 37%;
+  }
+  @include desktop-width{
+    float: right;
+    margin: 0 auto;
     width: 40%;
+
   }
 }
 

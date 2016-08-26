@@ -6,15 +6,8 @@ hr {
   @extend %hide;
     margin: 25px 0;
 }
-
-
 h1 {
   @extend %center;
-}
-
-h1#portfolio {
-  @include margin-system(0,70,5,70,5);
-  margin: 70px 5px;
 }
 
 .wrapper {
@@ -29,19 +22,18 @@ h1#portfolio {
       @extend %center;
       @include margin-system(0,70,5,70,5);
     }
-    #lead-container {
-      @extend %margin-center;
-      @extend %clearfix;
-      @include width-system(1000px);
-    }
-    #lead {
-      width: 420px;
-    }
+    
     #img-box {
       @include tablet-width{
-        float: right;
+        text-align: right;
         margin:0 auto;
         width: 40%;
+      }
+      @include desktop-width{
+        text-align: right;
+        margin:0 auto;
+        width: 40%;
+        display: none;
       }
     }
 
@@ -51,6 +43,12 @@ h1#portfolio {
         margin: 10px;
         display: inline-block;
       }
+      @include desktop-width{
+        display: inline-block;
+        width: 30%;
+        margin: 10px;
+      }
+
         img{
           @extend %full-width;
         }
@@ -63,6 +61,11 @@ h1#portfolio {
               height: auto;
               overflow: auto;
               height: 180px;
+            }
+            @include desktop-width{
+              width: 100%;
+              height: 200px;
+              overflow: auto;
             }
         }
 

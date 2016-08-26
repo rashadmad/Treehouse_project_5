@@ -12,12 +12,23 @@ h1,h2,h3,p,h1.bold {
 header {
   h1 {
       @include font-system(1.5,7,$main-grey);
-        @include desktop-width {
-          float: left;
-        }
+      @include tablet-width {
+        @include font-system(2,7,$main-grey);
+      }
+
   }
   li {
       @include font-system(1.1,8,$main-grey);
+      @include font-system(1.3);
+  }
+}
+
+footer {
+  li {
+      @include font-system(1.1,8,$main-grey);
+  }
+  b{
+      @include font-system(1.3,8,$main-grey);
   }
 }
 
@@ -27,10 +38,15 @@ a {
 p {
   @extend %center;
 }
-
+    a {
+      b{
+        @include font-system(.9, 8, $main-grey);
+      }
+    }
 b {
   @include font-system(.9, 8, $main-grey);
   color: $main-grey;
+
 }
 
 .bold {
@@ -40,7 +56,10 @@ b {
 header {
   h1 {
     @include font-system(1.5,7,$main-grey);
-
+    @include margin-system(15);
+    @include tablet-width {
+      @include font-system(2);
+    }
   }
 }
 
@@ -64,16 +83,26 @@ header {
   @include font-system(1.5,7,$main-grey);
 }
 
+#lead-container {
+
+}
+
 .lead {
   @extend %no-deco;
   @extend %center;
-  @include font-system(1.2);
+  @extend %margin-center;
   @include margin-system(30);
+  @include font-system(1.2);
     @include tablet-width {
+      @include font-system(1.8,$line-height:1.3);
       text-align: left;
-      margin: 45px 0px 0px 50px;
-      line-height: 1.3;
-      font-size: 1.5em;
+    }
+
+    @include desktop-width {
+      @include margin-system(30,$top:100,$left:70);
+      @include font-system(1.8,$line-height:1.3);
+      @include width-system(600px,600);
+      text-align: left;
     }
 }
 
@@ -88,12 +117,19 @@ li {
 .skills-list {
   @extend %margin-center;
   @include font-system(1.2,8,$main-grey,$line-height:200%);
-  @include width-system(600,600,100);
+  @include width-system(800,800,100);
     li {
       @include tablet-width{
+        @include font-system(.9,8,$main-grey,$line-height:1);
         display: inline;
         padding: 10px;
         line-height: 4;
+        }
+        @include desktop-width{
+          @include width-system(600,600,100);
+          display: inline-block;
+          padding: 10px;
+          line-height: 4;
         }
     }
 }

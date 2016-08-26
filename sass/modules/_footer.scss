@@ -24,6 +24,7 @@ footer {
   .follow {
     @extend %center;
     @include width-system(300,300,100);
+    @include font-system(1.2,1,$main-grey,$line-height:1.5);
       font-weight: 500;
       margin: 20px auto;
   }
@@ -41,6 +42,7 @@ footer {
   }
   address {
     @extend %center;
+    @include margin-system(10);
   }
   ul{
     @extend %no-display;
@@ -48,7 +50,13 @@ footer {
       display: inline;
       float: right;
       @include clearfix();
-      @include margin-system(10,$top:80);
+      @include margin-system(10,$top:12,$right:0);
+    }
+    @include desktop-width{
+      display: inline;
+      float: right;
+      @include clearfix();
+      @include margin-system(10,$top:25,$right:0);
     }
 
     li {
@@ -57,15 +65,18 @@ footer {
         @include tablet-width{
           display: inline;
         }
+        @include desktop-width{
+          display: inline;
+        }
     }
-  }
-  #to-top{
-    @extend %right;
   }
 }
 
 .bottom-nav {
   @include margin-system(10);
+  @include tablet-width{
+    @include margin-system(10,$left:30)
+  }
 }
 
 .bottom-nav:first-of-type {
@@ -74,6 +85,9 @@ footer {
 .bottom-nav:last-of-type {
   @extend %right;
   @include tablet-width{
+    display: none;
+  }
+  @include desktop-width{
     display: none;
   }
 }
